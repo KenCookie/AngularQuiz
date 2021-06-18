@@ -1,10 +1,103 @@
-.titleimg {
-    width: 84px;
-    height: 32px;
-    margin: auto;
+.bsname {
+    margin: 0;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size: 2.3vmin;
 }
 
-img {
+.titlebar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding-block: 10px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size: 2.3vmin;
+    /* background-image: linear-gradient(to right, #f1c8c8 0%, #d3e9ee 19%, #6ad6f1 42%, #bda8e4 79%, #7ac5d8 100%); */
+    color: rgb(54, 54, 54);
+}
+
+.hlogo {
+    width: 82px;
+    height: 32px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.hlogo img {
+    align-items: center;
+}
+
+.hsearchimg img {
+    transform: scaleX(-1);
+    padding-left: 10px;
+}
+
+.huser {
+    margin-left: auto;
+    padding-right: 5px;
+}
+
+.huser a {
+    padding-right: 100px;
+    padding: 13.5px;
+}
+
+
+/* .hcart li a img,
+.hlike>img {
+    padding-left: 15px;
+    padding-right: 15px;
+} */
+
+.titlebar a {
+    text-decoration: none;
+    display: block;
+    padding: 13.5px;
+    margin-right: 1em;
+}
+
+.titlebar li,
+.titlebar li a {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.titlebar img {
     max-width: 100%;
     max-height: 100%;
+}
+
+hr {
+    width: 95%;
+}
+
+
+/* ---------------------- 標籤 ---------------------- */
+
+.typebar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding-block: 10px;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    font-size: 2.3vmin;
+    /* background-image: linear-gradient(to right, #f1c8c8 0%, #d3e9ee 19%, #6ad6f1 42%, #bda8e4 79%, #7ac5d8 100%); */
+    color: rgb(54, 54, 54);
+}
+
+.typebar a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    margin-right: 1em;
 }
