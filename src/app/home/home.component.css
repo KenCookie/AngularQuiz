@@ -1,0 +1,201 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+}
+
+/* 輪播圖容器樣式 */
+
+ul.slides {
+    position: relative;
+    width: 85vw;
+    height: 50vh;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: darkgrey;
+    /*元素超過某個範圍的時候該如何呈現*/
+    overflow: hidden;
+}
+
+img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: contain;
+    vertical-align: middle;
+    /* padding: 10px 10px; */
+}
+
+/* 單張輪播圖容器樣式 */
+
+li#slide {
+    margin: 0;
+    padding: 0;
+    /*繼承父容器大小*/
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 120px;
+    color: rebeccapurple;
+    transition: 0.5s transform ease-in-out;
+}
+
+#slide:nth-of-type(1) {
+    background-color: khaki;
+}
+
+#slide:nth-of-type(2) {
+    background-color: lightcoral;
+    left: 100%;
+}
+
+#slide:nth-of-type(3) {
+    background-color: lightskyblue;
+    left: 200%;
+}
+
+#slide:nth-of-type(4) {
+    background-color: rgb(189, 228, 145);
+    left: 300%;
+}
+
+#slide:nth-of-type(5) {
+    background-color: thistle;
+    left: 400%;
+}
+
+input[type="radio"] {
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+
+.controls-visible {
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+}
+
+.controls-visible label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid wheat;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked~.controls-visible label:nth-of-type(1) {
+    background-color: slategray;
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked~.controls-visible label:nth-of-type(2) {
+    background-color: slategray;
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked~.controls-visible label:nth-of-type(3) {
+    background-color: slategray;
+}
+
+.slides input[type="radio"]:nth-of-type(4):checked~.controls-visible label:nth-of-type(4) {
+    background-color: slategray;
+}
+
+.slides input[type="radio"]:nth-of-type(5):checked~.controls-visible label:nth-of-type(5) {
+    background-color: slategray;
+}
+
+.slides input[type="radio"]:nth-of-type(1):checked~#slide {
+    transform: translatex(0%);
+}
+
+.slides input[type="radio"]:nth-of-type(2):checked~#slide {
+    transform: translateX(-100%);
+}
+
+.slides input[type="radio"]:nth-of-type(3):checked~#slide {
+    transform: translateX(-200%);
+}
+
+.slides input[type="radio"]:nth-of-type(4):checked~#slide {
+    transform: translateX(-300%);
+}
+
+.slides input[type="radio"]:nth-of-type(5):checked~#slide {
+    transform: translateX(-400%);
+}
+
+/*商品區*/
+
+.pd_container {
+    margin: 0;
+    padding-left: 5px;
+    padding-block: 10px;
+    margin-right: 5vw;
+}
+
+.list_container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding-block: 10px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.product_hot, .product_new {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+    font-size: 2.3vmin;
+}
+
+.hot_list, .new_list {
+    width: 12vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+    font-size: 2.3vmin;
+}
+
+.pd-text {
+    border-bottom: 1px #000 solid;
+    padding-bottom: 5px;
+    margin-right: auto;
+    margin-left: 5vw;
+}
+
+.pd_container ul li a {
+    text-decoration: none;
+}
+
+.product_img , .hot_list span, .new_list span{
+    width: 14vw;
+    height: 128px;
+}
+
+.like_img ,.addcart_img {
+    width: 2vw;
+    height: 128px;
+}
