@@ -46,7 +46,6 @@
     padding: 13.5px;
 }
 
-
 /* .hcart li a img,
 .hlike>img {
     padding-left: 15px;
@@ -60,8 +59,7 @@
     margin-right: 1em;
 }
 
-.titlebar li,
-.titlebar li a {
+.titlebar li, .titlebar li a {
     height: 50px;
     display: flex;
     justify-content: center;
@@ -76,7 +74,6 @@
 hr {
     width: 95%;
 }
-
 
 /* ---------------------- 標籤 ---------------------- */
 
@@ -101,3 +98,4 @@ hr {
     padding: 1em;
     margin-right: 1em;
 }
+
