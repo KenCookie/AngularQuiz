@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { BookData, BookDatas, BookstoreServiceService } from '../bookstore-service.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  booklists: BookData[] = BookDatas;
+  thebooklist: BookData;
+
+  constructor(private bookstoreservice: BookstoreServiceService) {
+
+    this.bookstoreservice.getBookdata().subscribe(data => this.booklists = data)
+    console.log(this.booklists.length)
+  }
 
   ngOnInit(): void {
   }
-
 }

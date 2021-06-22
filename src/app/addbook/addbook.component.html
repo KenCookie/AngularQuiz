@@ -1,33 +1,79 @@
-<p>addbook works!</p>
-<div>
-    <span>書籍名稱</span>
-    <input type="text">
-    <span>ISBN</span>
-    <input type="text">
-    <span>作者</span>
-    <input type="text">
-    <span>出版社</span>
-    <input type="text">
-    <span>定價</span>
-    <input type="text">
-    <span>- 書籍分類 -</span>
-
-    <span>大分類</span>
-    <select name="" id=""></select>
-    <span>中分類</span>
-    <select name="" id=""></select>
-    <span>小分類</span>
-    <select name="" id=""></select>
-
-
-    <span>簡介</span>
-    <input type="text">
-
-    <span>書籍圖片</span>
-    <input type="text">
-
-    <span>頁數</span>
-    <input type="text">
-
+<!-- <p>addbook works!</p> -->
+<div class="container">
+    <li>
+        <span>* 書籍名稱</span>
+        <input type="text" placeholder="必填" required autofocus>
+    </li>
+    <li>
+        <span>* ISBN</span>
+        <input type="text" placeholder="必填" required>
+    </li>
+    <li>
+        <span>* 作者</span>
+        <input type="text" placeholder="必填" required>
+    </li>
+    <li>
+        <span>出版社</span>
+        <input type="text" placeholder="請輸入出版社">
+    </li>
+    <li>
+        <span>* 定價</span>
+        <input type="text" placeholder="必填" required>
+    </li>
+    <li>
+        <span>- 書籍分類 -</span>
+    </li>
+    <li>
+        <span>大分類</span>
+        <select name="" id="">
+            <option>請選擇大分類</option>
+            <option>熱門推薦</option>
+            <option>最新書籍</option>
+            <option>特價書</option>
+        </select>
+    </li>
+    <li>
+        <span>中分類</span>
+        <select name="" id="">
+            <option>請選擇中分類</option>
+            <option>000　總類</option>
+            <option>100　哲學類</option>
+            <option>200　宗教類</option>
+            <option>300　自然科學類</option>
+            <option>400　應用科學類</option>
+            <option>500　社會科學類</option>
+            <option>600　中國歷史類</option>
+            <option>700　外國歷史類</option>
+            <option>800　語文類</option>
+            <option>900　美術類</option>
+        </select>
+    </li>
+    <li>
+        <span>小分類</span>
+        <select name="" id="">
+            <option>請選擇小分類</option>
+            <option>文學小說</option>
+            <option>輕小說　漫畫/圖文書</option>
+            <option>商業理財　語言　電腦</option>
+            <option>心理勵志　醫療　宗教</option>
+            <option>人文　社科　科普</option>
+            <option>藝術設計</option>
+            <option>生活風格　旅遊　飲食</option>
+            <option>親子　童書</option>
+            <option>專業教科書　考試用書</option>
+        </select>
+    </li>
+    <li>
+        <span>簡介</span>
+        <input type="text" placeholder="圖文編輯">
+    </li>
+    <li>
+        <span>書籍圖片</span>
+        <input type="file" accept="image/*">
+    </li>
+    <li>
+        <span>頁數</span>
+        <input type="text" placeholder="請輸入頁數">
+    </li>
     <button>儲存</button>
 </div>

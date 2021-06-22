@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+    font-size: 2.3vmin;
+    list-style: none;
+}
+
+.container li {
+    padding-top: 15px;
+}
+
+.container li span {
+    padding-right: 20px;
+}
+
+button{
+    margin-top: 15px;
+}
