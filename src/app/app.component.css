@@ -46,17 +46,24 @@
     padding: 13.5px;
 }
 
-/* .hcart li a img,
-.hlike>img {
-    padding-left: 15px;
-    padding-right: 15px;
-} */
+.huser a:hover {
+    color: rgb(69, 152, 207);
+}
+
+.hcart a:hover {
+    color: rgb(73, 89, 179);
+}
+
+.hlike a:hover {
+    color: rgb(179, 73, 96);
+}
 
 .titlebar a {
     text-decoration: none;
     display: block;
     padding: 13.5px;
     margin-right: 1em;
+    color: rgb(54, 54, 54);
 }
 
 .titlebar li, .titlebar li a {
@@ -83,12 +90,14 @@ hr {
     align-items: center;
     justify-content: space-evenly;
     list-style: none;
-    margin: 0;
+    margin: 10px;
     padding-block: 10px;
     font-family: Microsoft JhengHei;
     font-weight: bold;
     font-size: 2.3vmin;
+    border-radius: 15px;
     /* background-image: linear-gradient(to right, #f1c8c8 0%, #d3e9ee 19%, #6ad6f1 42%, #bda8e4 79%, #7ac5d8 100%); */
+    background-image: linear-gradient(to right, #f1c8c8 0%, #d3e9ee 19%, #6ad6f1 42%, #bda8e4 79%, #7ac5d8 100%);
     color: rgb(54, 54, 54);
 }
 
@@ -97,5 +106,12 @@ hr {
     display: block;
     padding: 1em;
     margin-right: 1em;
+    color: rgb(54, 54, 54);
+    /* color: whitesmoke; */
 }
 
+.typebar a:hover {
+    background-image: linear-gradient(-20deg, rgba(233, 220, 252, 0.904) 0%, #fbfcdbea 100%);
+    color: rgb(138, 11, 138);
+    border-radius: 10px;
+}

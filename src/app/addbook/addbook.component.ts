@@ -31,7 +31,7 @@ export class AddbookComponent implements OnInit {
 
 
   constructor(private http: HttpClient, private bookstoreservice: BookstoreServiceService) {
-    this.bookstoreservice.getBookdata().subscribe(data => this.booklists = data);
+    // this.bookstoreservice.getBookdata().subscribe(data => this.booklists = data);
     this.addbook(this.testbook).subscribe(data => {
       this.booklists.push(data);
     });
