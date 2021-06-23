@@ -24,6 +24,7 @@ export class BookstoreServiceService {
    }
 
   bookstoreUrl = 'assets/BookData.json';
+  // bookstoreUrl = 'https://60d2cf6f858b410017b2e3ba.mockapi.io/book'
 
   getBookdata(): Observable<BookData[]> {
     if(this.bookdatas) return of(this.bookdatas);
